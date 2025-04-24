@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>blqckswzn | UNK Store</title>
+<style>
+  body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  header {
+    text-align: center;
+    padding: 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+    border-bottom: 2px solid #00ffcc;
+    padding-bottom: 10px;
+  }
+  .rgb-animated {
+    font-weight: bold;
+    animation: rgbColor 3s infinite linear;
+  }
+  .sub {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .highlight {
+    font-weight: bold;
+  }
+  .button {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 12px;
+    text-decoration: none;
+    max-width: 350px;
+    display: block;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    text-align: center;
+  }
+  .button:hover {
+    background-color: #00ffcc;
+    color: #121212;
+  }
+  .info-box {
+    background-color: #222222;
+    padding: 20px;
+    margin-top: 2rem;
+    border-radius: 10px;
+    text-align: left;
+  }
+  .info-box h2 {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .info-box p {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .close-button {
+    background-color: #ff4444;
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .close-button:hover {
+    background-color: #cc0000;
+  }
+  .small-text {
+    font-size: 0.9rem;
+    color: #bbb;
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1f1f1f;
+    color: #bbb;
+    margin-top: 2rem;
+  }
+
+  /* Botões de ? */
+  .question-button {
+    background-color: #00ffcc;
+    color: #121212;
+    padding: 0.8rem;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+  }
+  .question-button:hover {
+    background-color: #121212;
+    color: #00ffcc;
+  }
+
+  .question-button.left {
+    left: 20px;
+    top: 20px;
+  }
+
+  .question-button.right {
+    right: 20px;
+    top: 20px;
+  }
+
+  /* Seta apontando para os botões */
+  .arrow {
+    position: absolute;
+    color: #00ffcc;
+    font-size: 2rem;
+  }
+
+  .arrow-left {
+    left: 35px;
+    top: 80px;
+    transform: rotate(45deg);
+  }
+
+  .arrow-right {
+    right: 35px;
+    top: 80px;
+    transform: rotate(-45deg);
+  }
+
+  /* Texto para clique */
+  .click-text {
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  /* Animação RGB lenta */
+  @keyframes rgbColor {
+    0% { color: red; }
+    20% { color: orange; }
+    40% { color: yellow; }
+    60% { color: lime; }
+    80% { color: cyan; }
+    100% { color: magenta; }
+  }
+
+.info-tip {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  color: #ccc;
+  font-weight: bold;
+  font-size: 0.85rem;
+  border-bottom: 2px solid white;
+  padding-bottom: 3px;
+  z-index: 1000;
+}
+</style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1 class="rgb-animated">blqckswzn</h1>
+    <p class="sub">🔧 Dev & Config de Plugins (Mine) | 💻 Programação | Bots | Servidores de Minecraft</p>
+  </header>
+
+  <!-- Botões principais -->
+  <main>
+    <!-- Botão da UNK Store -->
+    <a class="button" href="https://discord.gg/8rc37GHAun" target="_blank">
+      UNK Store melhor de itens do Discord! 🌟
+    </a>
+
+    <p class="small-text">Entre na melhor loja do Discord!</p>
+
+    <!-- Caixa de Informações sobre Produtos -->
+    <div class="info-box" id="infoBox" style="display:none;">
+      <h2>Produtos Disponíveis na UNK Store</h2>
+      <p>Vendemos uma variedade de produtos no Discord, como:</p>
+      <ul>
+        <li>✅ Métodos de Nitro</li>
+        <li>✅ Links Nitro</li>
+        <li>✅ Nitrada</li>
+        <li>✅ Cloner Server</li>
+        <li>✅ Impulsos</li>
+        <li>✅ Capa Optifine</li>
+        <li>✅ KeysSteam</li>
+        <li>✅ Spotify</li>
+      </ul> 
+      <p><strong>MUITOS NOVOS PRODUTOS!!! ACESSE NOSSA LOJA E FIQUE POR DENTRO DE NOVOS PRODUTOS, APENAS CLIQUE NO BOTAO!</strong></p>
+      <p>
+        <a href="https://discord.gg/W9BXRMpSbD" 
+           target="_blank" 
+           class="rgb-fast" 
+           style="text-decoration: none; font-weight: bold;">
+          Entre na loja para ver tudo. Apenas Clique Aqui!
+        </a>
+      </p>
+      <p><strong>Todos os produtos são confiáveis e a entrega é automática!</strong></p>
+      <button class="button" onclick="closeInfoBox()">Clique para saber mais</button>
+      <p><strong>Se interessou? Entre em contato com @blqckswz7</strong></p>
+      <button class="close-button" onclick="closeInfoBox()">Fechar</button>
+    </div>
+
+    <!-- Botão de Discord -->
+    <a class="button" href="https://discord.com/users/1343486789079535687" target="_blank">
+      Meu Discord
+    </a>
+    <p class="small-text">Fale comigo!</p>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>Feito com ♥ por <strong><span class="rgb-animated">@blqckswz7</span></strong></p>
+  </footer>
+
+  <!-- Botões de Informações -->
+  <span class="question-button left" onclick="showInfoBox()">?</span>
+  <span class="question-button right" onclick="showDiscordInfoBox()">?</span>
+
+  <!-- Setas apontando para os botões -->
+  <div class="arrow arrow-left">↗</div>
+  <div class="arrow arrow-right">↖</div>
+
+  <!-- Caixa de Informações sobre o Discord -->
+  <div class="info-box" id="discordInfoBox" style="display:none;">
+    <h2>Discord do blqckswzn</h2>
+    <p>Olá, sou programador especializado em servidores de Minecraft e configuração de plugins, mods e muito mais. Com anos de experiência, sou capaz de criar e configurar servidores de Minecraft de alta qualidade, atender suas necessidades específicas e personalizar qualquer plugin ou mod para o seu servidor.</p>
+    <p>Se você está procurando alguém para configurar ou criar um servidor de Minecraft, estou disponível para ajudar! Caso precise de algum serviço, me chame no Discord @blqckswz7.</p>
+    <button class="close-button" onclick="closeDiscordInfoBox()">Fechar</button>
+  </div>
+
+<!-- AVISO NO CANTO INFERIOR -->
+<div class="info-tip">
+  <strong>DICA:</strong> Os pontos de interrogação são clicáveis e revelam informações importantes e exclusivas.
+</div>
+
+
+  <script>
+    function showInfoBox() {
+      document.getElementById('infoBox').style.display = 'block';
+    }
+
+    function closeInfoBox() {
+      document.getElementById('infoBox').style.display = 'none';
+    }
+
+    function showDiscordInfoBox() {
+      document.getElementById('discordInfoBox').style.display = 'block';
+    }
+
+    function closeDiscordInfoBox() {
+      document.getElementById('discordInfoBox').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
